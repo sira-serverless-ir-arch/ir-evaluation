@@ -1,22 +1,24 @@
-from datasets.informationretrievaltest import InformationRetrievalTest, CollectionName
+import pandas as pd
+from datasets.informationretrievaltest import InformationRetrievalTest, Collection, Arch
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+def els_process():
+    els = InformationRetrievalTest(collection_name=Collection.Trec_covid, arch=Arch.ELS)
+    els.index_documents(url="http://127.0.0.1:9200/")
+    els.retrival_documents()
+    pd.DataFrame(els.recall_precision_metrics()).to_json("els_fscore.json")
+    pd.DataFrame(els.ncdg_metrics()).to_json("els_ndcg.json")
 
 
-# Press the green button in the gutter to run the script.
+def sira_process():
+    sira = InformationRetrievalTest(collection_name=Collection.Trec_covid, arch=Arch.SIRA)
+    sira.index_documents(url="http://127.0.0.1:8080/nir")
+    sira.retrival_documents()
+    pd.DataFrame(sira.recall_precision_metrics()).to_json("sira_fscore.json")
+    pd.DataFrame(sira.ncdg_metrics()).to_json("sira_ndcg.json")
+
+
 if __name__ == '__main__':
-    collection = InformationRetrievalTest(collection_name=CollectionName.Trec_covid)
-    # collection.index_documents()
-    collection.retrival_documents()
-    collection.recall_precision_metrics()
-
-    r = collection.ncdg_metrics()
-    print(r)
-
-    r = collection.recall_precision_metrics()
-    print(r)
-
+    els_process()
+    sira_process()
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/

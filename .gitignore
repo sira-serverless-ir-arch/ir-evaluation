@@ -1,3 +1,5 @@
 venv
 .idea
 datasets/trec_covid/docs.txt
+/elasticsearch-data/
+/esdata/
