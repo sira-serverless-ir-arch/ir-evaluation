@@ -19,6 +19,5 @@ def sira_process():
 
 
 if __name__ == '__main__':
-    els_process()
+    # els_process()
     sira_process()
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
