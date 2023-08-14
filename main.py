@@ -19,5 +19,5 @@ def sira_process():
 
 
 if __name__ == '__main__':
-    # els_process()
-    sira_process()
+    els_process()
+    # sira_process()

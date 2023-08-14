@@ -3,3 +3,4 @@ venv
 datasets/trec_covid/docs.txt
 /elasticsearch-data/
 /esdata/
+/xls/~$sira_trec_covid_fscore.xlsx
