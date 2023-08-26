@@ -1,0 +1,96 @@
+{
+    "documents": 5000,
+    "execution": 107.07855900000001,
+    "request": 186,
+    "memory": 83,
+}
+{
+    "documents": 10000,
+    "execution": 109.3720069,
+    "request": 189,
+    "memory": 98,
+}
+{
+    "documents": 15000,
+    "execution": 112.11860349999999,
+    "request": 226,
+    "memory": 106
+}
+{
+    "documents": 20000,
+    "execution": 121.34456579999998,
+    "request": 179,
+    "memory": 130
+}
+{
+    "documents": 25000,
+    "execution": 146.3496952,
+    "request": 187,
+    "memory": 137
+}
+{
+    "documents": 30000,
+    "execution": 156.0393887,
+    "request": 210,
+    "memory": 142
+}
+{
+    "documents": 35000,
+    "execution": 187.8948453,
+    "request": 198,
+    "memory": 169
+}
+{
+    "documents": 40000,
+    "execution": 213.6265155,
+    "request": 182,
+    "memory": 172
+}
+{
+    "documents": 45000,
+    "execution": 227.04172870000002,
+    "request": 195,
+    "memory": 181
+}
+{
+    "documents": 50000,
+    "execution": 279.5286095,
+    "request": 185,
+    "memory": 195
+}
+{
+    "documents": 55000,
+    "execution": 310.4763935,
+    "request": 216,
+    "memory": 208
+}
+{
+    "documents": 60000,
+    "execution": 346.8557527,
+    "request": 189,
+    "memory": 218
+}
+{
+    "documents": 65000,
+    "execution": 371.56693,
+    "request": 196,
+    "memory": 241
+}
+{
+    "documents": 70000,
+    "execution": 423.3088927,
+    "request": 187,
+    "memory": 267
+}
+{
+    "documents": 75000,
+    "execution": 487.74575619999996,
+    "request": 1.173020339012146,
+    "memory": 326
+}
+{
+    "documents": 80000,
+    "execution": 537.1384805,
+    "request": 205,
+    "memory": 348
+}
