@@ -1,3 +1,5 @@
+import json
+
 import pandas as pd
 from datasets.informationretrievaltest import InformationRetrievalTest, Collection, Arch
 
@@ -14,10 +16,14 @@ def sira_process():
     sira = InformationRetrievalTest(collection_name=Collection.Trec_covid, arch=Arch.SIRA)
     sira.index_documents(url="http://127.0.0.1:8080/nir")
     sira.retrival_documents()
-    pd.DataFrame(sira.recall_precision_metrics()).to_json("sira_trec_covid_fscore.json")
-    pd.DataFrame(sira.ncdg_metrics()).to_json("sira_trec_covid_ndcg.json")
+    pd.DataFrame(sira.recall_precision_metrics()).to_json("test_sira_trec_covid_fscore.json")
+    pd.DataFrame(sira.ncdg_metrics()).to_json("test_sira_trec_covid_ndcg.json")
 
+def sira_performance():
+    sira = InformationRetrievalTest(collection_name=Collection.Trec_covid, arch=Arch.SIRA)
+    # Salvar em um arquivo JSON
+    with open("performance/performance_40000.json", "w") as f:
+        json.dump(sira.performance(40000), f, indent=4)
 
 if __name__ == '__main__':
-    els_process()
-    # sira_process()
+    sira_performance()
