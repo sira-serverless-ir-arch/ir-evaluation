@@ -22,8 +22,8 @@ def sira_process():
 def sira_performance():
     sira = InformationRetrievalTest(collection_name=Collection.Trec_covid, arch=Arch.SIRA)
     # Salvar em um arquivo JSON
-    with open("performance/performance_75000.json", "w") as f:
-        json.dump(sira.performance(75000), f, indent=4)
+    with open("performance/performance_90000.json", "w") as f:
+        json.dump(sira.performance(90000), f, indent=4)
 
 if __name__ == '__main__':
     sira_performance()
