@@ -85,7 +85,7 @@
 {
     "documents": 75000,
     "execution": 487.74575619999996,
-    "request": 1.173020339012146,
+    "request": 187,
     "memory": 326
 }
 {
@@ -93,4 +93,28 @@
     "execution": 537.1384805,
     "request": 205,
     "memory": 348
+}
+{
+    "documents": 85000,
+    "execution": 584.4342528,
+    "request": 201,
+    "memory": 396
+}
+{
+    "documents": 90000,
+    "execution": 613.1882497999999,
+    "request": 203,
+    "memory": 416
+}
+{
+    "documents": 95000,
+    "execution": 632.9780696,
+    "request":  196,
+    "memory": 451
+}
+{
+    "documents": 100000,
+    "execution": 696.5986052999999,
+    "request": 200,
+    "memory": 564
 }
